@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            li #[a(href='/') home]
+            li #[a(href='/') about] 
+            li #[a(href='/') services] 
+            li #[a(href='/') class info]
+            li #[a(href='/') contact us]
+
+    section#introsection 
+      | Welcome! to Dance Acadmy
+      br
+      |here you can learn lots of type dance 
+      br
+      | section for pictures 
+
+    section#missionsection 
+      h2 Our Mission 
+      div.card-section
+        div.card
+          |this is card 1
+          div.card-box
+            div.card-img
+              img(src="/static/img/d1.png")
+            div.card-content
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid soluta at ipsa ad aperiam velit impedit beatae. Facere, hic dolore iusto voluptatem quo, praesentium nobis necessitatibus asperiores velit animi tempora.
+        div.card
+          |this is card 2
+          div.card-box
+            div.card-img
+              img(src="/static/img/d2.png")
+            div.card-content
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid soluta at ipsa ad aperiam velit impedit beatae. Facere, hic dolore iusto voluptatem quo, praesentium nobis necessitatibus asperiores velit animi tempora.
+        div.card
+          |this is card 3
+          div.card-box
+            div.card-img
+              img(src="/static/img/d1.png")
+            div.card-content
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid soluta at ipsa ad aperiam velit impedit beatae. Facere, hic dolore iusto voluptatem quo, praesentium nobis necessitatibus asperiores velit animi tempora.
+
+    section#sponsorssection 
+      h2 
+        | Our Sponsors 
+
+    footer#footer 
+      | our footer 
+
+
+    script
+      include ../static/index.js

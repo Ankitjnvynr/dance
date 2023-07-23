@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    padding: 12px;
+    z-index: 2;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    z-index: 2;
+    
+}
+body{
+    background:center/cover no-repeat url("/static/img/dance.gif") ;
+}
+.myinput{
+    width: 40%;
+    padding: 7px;
+    margin: 10px;
+    outline: none;
+    color: yellow;   
+    border-radius: 5px;
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: black;
+}
+.btn{
+    padding: 5px 10px;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.container{
+    min-height: 80vh;
+    color: yellow;   
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: -1;
+
+}
